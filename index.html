@@ -8,7 +8,10 @@
 			rel="stylesheet"
 			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
 			crossorigin="anonymous" />
-		<title></title>
+		<title>Name suggestion</title>
+		<meta
+			name="google-site-verification"
+			content="z4Dc-Pdkwejr9STOHlcoOy0noDZq3kweg9_lnGOrUow" />
 	</head>
 	<body>
 		<div class="container">
@@ -60,17 +63,15 @@
 			};
 
 			let nameSuggestion = null;
-			let point = null
+			let point = null;
 
-			window.onload = function(e){ 
-			    nameSuggestion = document.getElementById("nameSuggestionId");
-			    point = document.getElementById("pointId")
-
-			}
+			window.onload = function (e) {
+				nameSuggestion = document.getElementById("nameSuggestionId");
+				point = document.getElementById("pointId");
+			};
 
 			function onClickHandler() {
 				point.innerHTML = calculatePoint(nameSuggestion.value);
-
 			}
 
 			function calculatePoint(name) {
